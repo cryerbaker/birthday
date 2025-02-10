@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    animation: pop-in 1s ease-in-out forwards;
+  }
+  
+  .sub-message {
+    font-size: 1.5rem;
+    margin-top: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff4a3d;
+  }
+  
+  /* Confetti Canvas */
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Animation */
+  @keyframes pop-in {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    
+    to {
+      transform: scale(1);
+      opacity: 1;
+  }
+  }
+  

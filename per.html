@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .sub-message{
+        font-style: initial;
+        color: rgb(32, 245, 202);
+    }
+    body {
+  background-image: url('joty.png'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed during scrolling */
+  background-position: center; /* Centers the image */
+}
+@media (max-width: 720px){
+        #birthday-message{
+            font-size: 30px
+        }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="birthday-message">🎉 Happy Birthday ! 🎂<br/>Anyi Lucy</h1>
+    <p class="sub-message">Happy birthday! I was going to get you something amazing, but then I remembered I'm your favorite gift. You're welcome! 🥳<br/> (Budget issue🥲)</p>
+    <button id="play-music-btn">Happy Happy Happy</button>
+    <canvas id="confetti"></canvas>
+  </div>
+
+  <audio id="birthday-song" src="joty.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
